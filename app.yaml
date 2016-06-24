@@ -9,6 +9,12 @@ handlers:
   static_files: favicon.ico
   upload: favicon\.ico
 
+- url: /img
+  static_dir: images
+
+- url: /osu/1/?.*
+  script: osu.pages.handler.app
+
 - url: .*
   script: main.app
 
